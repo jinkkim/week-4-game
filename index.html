@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"/>
+
+
+  <script type="text/javascript" src="assets/javascript/jquery-3.0.0.js"></script>
+  <script type="text/javascript" src="assets/javascript/popper.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  <title>Crystal Collector!</title>
+</head>
+
+<body>
+    <h1 class = "container h1 col-10 text-white mb-0 p-3"
+    style = "background-color: #D2691E;">Crystal Collector!</h1>
+
+    <div class = "container col-10 mt-3 py-5" style = "background-color: #FFE4C4">
+      <p style="color:green;">You will be given a random number at the start of the game</p>
+      <p style="color:green;">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+      <p style="color:green;">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+      <p style="color:green;">The value of each crystal is hidden from you until you click on it.</p>
+      <p style="color:green;">Each time when the game starts, the game will change the value of each crystal.</p>
+    </div>
+
+
+    <div class = "container col-10 mt-3">
+        <div class = "row">
+            <div class = "col-4 pt-2" style = "background-color: green; font-size: 30px;">
+                <p id="randomNR">##</p>
+            </div>
+
+            <div class = "col-4 offset-4" style = "background-color:cyan; " id="score">
+                <p>wins:0</p>
+                <p>losses: 00</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class = "container col-10 ">
+        <div class="row justify-content-around">
+            <img id="diamond" src="assets/images/diamond.jpg" style = "width:100px;height:100px;" alt="Diamond">
+            <img id="opal" src="assets/images/opal.jpg" style = "width:100px;height:100px;" alt="Opal">
+            <img id="ruby" src="assets/images/ruby.jpg" style = "width:100px;height:100px;" alt="Ruby">
+            <img id="sapphire" src="assets/images/sapphire.jpg" style = "width:100px;height:100px;"alt="Sapphire">
+        </div>
+    </div>
+
+    <div class="container col-10 mt-1 pt-3 pb-1" style="color:white; background-color: #008B8B;">
+      <p>your total score is: </p>
+    </div>
+
+    <div class="container col-10 mt-2 mb-2 p-3" style="color:white; background-color: #008B8B;" id="counter">
+      <h2>0</h2>
+    </div>
+
+    
+</body>
+
+</html>
